@@ -11,6 +11,11 @@ spring:
 server:
   port: 7001
 
+# 开启Feign的熔断器配置
+feign:
+  hystrix:
+    enabled: true
+
 eureka:
   client:
     serviceUrl:
