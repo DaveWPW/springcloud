@@ -8,3 +8,5 @@ web-admin-feign 配置 Hystrix Dashboard（熔断器仪表盘监控）
 zull API网关（Zuul的主要功能是路由转发和过滤器，Zuul默认和Ribbon结合实现了负载均衡的功能）
 zull 配置网关路由失败时回调（网关向 api 服务请求失败了，但是消费者客户端向网关发起的请求是成功的，不应该把 api 的 404,500 等问题抛给客户端）
 zull 实现路由网关的服务过滤功能
+config 分布式配置中心服务端(获取 GitHub 的项目配置)
+web-admin-feign 修改 application.yml 配置文件使用 GitHub 云端配置

@@ -25,3 +25,14 @@ Feign 使用 Hystrix 熔断器
 
     在 Application 主配置类添加 @EnableHystrix, @EnableHystrixDashboard 注解
     再需要添加一个熔断器仪表盘监控配置类
+    
+GitHub 配置文件客户端配置
+    修改 application.yml 指定 GitHub 的 yaml文件：
+    
+    spring:
+      cloud:
+        config:
+          uri: http://localhost:8888
+          name: web-admin-feign
+          label: master
+          profile: prod

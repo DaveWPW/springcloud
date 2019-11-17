@@ -1,22 +1,28 @@
 spring:
-  application:
-    name: springcloud-web-admin-feign
-  thymeleaf:
-    cache: false
-    mode: LEGACYHTML5
-    encoding: UTF-8
-    servlet:
-      content-type: text/html
+  cloud:
+    config:
+      uri: http://localhost:8888
+      name: web-admin-feign
+      label: master
+      profile: dev
+#  application:
+#    name: springcloud-web-admin-feign
+#  thymeleaf:
+#    cache: false
+#    mode: LEGACYHTML5
+#    encoding: UTF-8
+#    servlet:
+#      content-type: text/html
 
-server:
-  port: 7001
+#server:
+#  port: 7001
 
 # 开启Feign的熔断器配置
-feign:
-  hystrix:
-    enabled: true
-
-eureka:
-  client:
-    serviceUrl:
-      defaultZone: http://localhost:8091/eureka/
+#feign:
+#  hystrix:
+#    enabled: true
+#
+#eureka:
+#  client:
+#    serviceUrl:
+#      defaultZone: http://localhost:8091/eureka/
