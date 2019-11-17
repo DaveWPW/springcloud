@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: springcloud-zipkin
+# ZipKin 的默认端口9411
+server:
+  port: 9411
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8091/eureka/
+# 这个是 2.8.0 后添加的配置
+management:
+  metrics:
+    web:
+      server:
+        auto-time-requests: false
