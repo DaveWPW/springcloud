@@ -9,7 +9,7 @@ spring:
           uri: https://github.com/DaveWPW/springcloud-config-github
           search-paths: respo
           username: DaveWPW
-          password: wupeiwen93
+          password:
 
 server:
   port: 8888
