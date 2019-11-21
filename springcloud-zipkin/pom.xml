@@ -39,6 +39,7 @@
         <!-- Spring Boot End -->
 
         <!-- Spring Cloud Begin -->
+        <!-- ZipKin Server 服务端 -->
         <dependency>
             <groupId>io.zipkin.java</groupId>
             <artifactId>zipkin</artifactId>
@@ -54,6 +55,15 @@
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
+        </dependency>
+        <!-- Spring Boot Admin Client 客户端 -->
+        <dependency>
+            <groupId>org.jolokia</groupId>
+            <artifactId>jolokia-core</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>de.codecentric</groupId>
+            <artifactId>spring-boot-admin-starter-client</artifactId>
         </dependency>
         <!-- Spring Cloud End -->
     </dependencies>

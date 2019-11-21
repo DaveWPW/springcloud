@@ -11,6 +11,8 @@ zull 实现路由网关的服务过滤功能
 config 分布式配置中心服务端(获取 GitHub 的项目配置)
 web-admin-feign 修改 application.yml 配置文件使用 GitHub 云端配置
 修改 dependencies 项目添加 ZipKin 依赖、版本号
-zipkin 服务追踪（所有被追踪的项目都要添加 zipkin 依赖，添加 zipkin 服务配置）
+zipkin 服务追踪（所有被追踪的项目都要添加 ZipKin 依赖，添加 ZipKin 服务配置）
 修改 dependencies 项目添加 Admin Server 依赖、版本号
 admin 服务监控 (Spring Boot Admin Server 服务端）
+修改 dependencies 项目添加 Admin Client 依赖、版本号
+admin 服务监控 (所有被监控的项目都要添加 Admin Client 依赖，添加 Admin Client 服务配置）

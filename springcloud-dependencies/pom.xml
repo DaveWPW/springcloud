@@ -40,7 +40,7 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
-            <!--ZipKin服务跟踪-->
+            <!-- ZipKin 服务跟踪 -->
             <dependency>
                 <groupId>io.zipkin.java</groupId>
                 <artifactId>zipkin</artifactId>
@@ -56,10 +56,16 @@
                 <artifactId>zipkin-autoconfigure-ui</artifactId>
                 <version>${zipkin.version}</version>
             </dependency>
-            <!--Spring Boot Admin 服务监控-->
+            <!--Spring Boot Admin Server 服务监控-->
             <dependency>
                 <groupId>de.codecentric</groupId>
                 <artifactId>spring-boot-admin-starter-server</artifactId>
+                <version>${spring-boot-admin.version}</version>
+            </dependency>
+            <!-- Spring Boot Admin Client 服务监控 -->
+            <dependency>
+                <groupId>de.codecentric</groupId>
+                <artifactId>spring-boot-admin-starter-client</artifactId>
                 <version>${spring-boot-admin.version}</version>
             </dependency>
         </dependencies>

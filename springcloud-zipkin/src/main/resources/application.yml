@@ -1,6 +1,11 @@
 spring:
   application:
     name: springcloud-zipkin
+  boot:
+    admin:
+      client:
+        url: http://localhost:8084
+
 # ZipKin 的默认端口9411
 server:
   port: 9411
@@ -9,6 +14,7 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://localhost:8091/eureka/
+
 # 这个是 2.8.0 后添加的配置
 management:
   metrics:
