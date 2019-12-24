@@ -1,5 +1,6 @@
 package com.dave.spring.cloud.service.admin.controller;
 
+import com.dave.spring.cloud.common.entity.User;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -20,6 +21,9 @@ public class AdminController {
 
     @RequestMapping(value = "hello", method = RequestMethod.GET)
     public String sayHello(String message) {
+        User user = new User();
+        user.setName("admin");
+        System.out.println(user.getName());
         return String.format("Hi，your message is : %s i am from port : %s", message, port);
     }
 }

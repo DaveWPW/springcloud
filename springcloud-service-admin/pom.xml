@@ -18,6 +18,12 @@
     <inceptionYear>2018-Now</inceptionYear>
 
     <dependencies>
+        <!-- Common 共享工具类 -->
+        <dependency>
+            <groupId>com.dave</groupId>
+            <artifactId>springcloud-common</artifactId>
+            <version>1.0</version>
+        </dependency>
         <!-- Spring Boot Begin -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -31,6 +37,7 @@
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
         </dependency>
+        <!-- ZipKin 服务跟踪 -->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-zipkin</artifactId>
